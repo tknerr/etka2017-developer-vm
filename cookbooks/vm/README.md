@@ -1,5 +1,5 @@
-# Linux Developer VM Cookbook
+# Etka Developer VM Cookbook
 
-A cookbook for setting up a basic Linux Developer VM
+A cookbook for setting up the Etka Developer VM example
 
-See: https://github.com/Zuehlke/linux-developer-vm
+See: https://github.com/tknerr/etka2017-developer-vm
