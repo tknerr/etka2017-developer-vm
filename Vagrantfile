@@ -15,7 +15,7 @@ Vagrant::configure("2") do |config|
   config.vm.provider :virtualbox do |vbox, override|
     vbox.customize ["modifyvm", :id,
       "--name", "Etka Developer VM",
-      "--memory", 1048,
+      "--memory", 2048,
       "--cpus", 4
     ]
     vbox.gui = true
@@ -34,7 +34,8 @@ Vagrant::configure("2") do |config|
   if Vagrant.has_plugin?("vagrant-cachier")
     config.cache.enable :generic, {
       "chef_file_cache" => { cache_dir: "/root/.chef/local-mode-cache/cache" },
-      "berks_cache" => { cache_dir: "/home/vagrant/.berkshelf" }
+      "berks_cache" => { cache_dir: "/home/vagrant/.berkshelf" },
+      "m2_repo" => { cache_dir: "/home/vagrant/.m2/repository" }
     }
   end
 end
