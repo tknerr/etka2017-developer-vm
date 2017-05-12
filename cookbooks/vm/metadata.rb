@@ -14,3 +14,4 @@ supports 'ubuntu'
 
 depends 'apt', '6.0.1'
 depends 'java', '1.49.0'
+depends 'ark', '3.1.0'
