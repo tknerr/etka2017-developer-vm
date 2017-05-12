@@ -148,7 +148,7 @@ Finally, shutdown the VM, remove the sharedfolder, and export the VM as an .ova 
 $ vagrant halt
 $ VBoxManage sharedfolder remove "Etka Developer VM" --name "vagrant"
 $ VBoxManage modifyvm "Etka Developer VM" --name "Etka Developer VM v0.1.0"
-$ VBoxManage export "Etka Developer VM v0.1.0" --output "linux-developer-vm-v0.1.0.ova" --options manifest,nomacs
+$ VBoxManage export "Etka Developer VM v0.1.0" --output "etka-developer-vm-v0.1.0.ova" --options manifest,nomacs
 ```
 
 Don't forget to throw away the VM when you are done:

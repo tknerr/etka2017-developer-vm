@@ -22,7 +22,7 @@ Vagrant::configure("2") do |config|
   end
 
   # set the hostname
-  config.vm.hostname = "linux-developer-vm.local"
+  config.vm.hostname = "etka-developer-vm.local"
   # don't create a new keypair
   config.ssh.insert_key = false
 
