@@ -1,11 +1,11 @@
 
 # Etka Developer VM Example
 
-[![Circle CI](https://circleci.com/gh/Zuehlke/linux-developer-vm/tree/master.svg?style=shield)](https://circleci.com/gh/Zuehlke/linux-developer-vm/tree/master)
+[![Circle CI](https://circleci.com/gh/tknerr/etka2017-developer-vm/tree/master.svg?style=shield)](https://circleci.com/gh/tknerr/etka2017-developer-vm/tree/master)
 
 A minimal example / template project for a Chef-managed Etka Developer VM.
 
-![Etka Developer VM Screenshot](https://raw.github.com/Zuehlke/linux-developer-vm/master/linux_devbox.png)
+![Etka Developer VM Screenshot](https://raw.github.com/tknerr/etka2017-developer-vm/master/linux_devbox.png)
 
 It's meant to be copy/pasted and filled with life. The `cookbooks/vm` directory
 contains the recipes for setting up the VM and the tests that come along with it.
@@ -40,7 +40,7 @@ Other tweaks and settings worth mentioning:
 
 The latest version of this developer VM can be downloaded as a VM image from here:
 
- * https://github.com/Zuehlke/linux-developer-vm/releases
+ * https://github.com/tknerr/etka2017-developer-vm/releases
 
 After downloading the .ova file you can import it into VirtualBox via `File -> Import Appliance...`.
 Once imported, you can simply start the VM and log in:
