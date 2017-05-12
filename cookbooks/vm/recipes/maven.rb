@@ -24,5 +24,7 @@ end
 file '/etc/profile.d/maven.sh' do
   content <<~EOF
     export PATH=/usr/local/maven/bin:$PATH
+    export M2_HOME=/usr/local/maven
+    export MAVEN_OPTS="-Dmaven.repo.local=$HOME/.m2/repository -Xmx384m"
     EOF
 end
