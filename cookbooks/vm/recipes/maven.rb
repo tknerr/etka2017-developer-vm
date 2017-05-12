@@ -20,3 +20,9 @@ end
 link '/usr/local/maven' do
   to "/usr/local/apache-maven-#{mvn_version}"
 end
+
+file '/etc/profile.d/maven.sh' do
+  content <<~EOF
+    export PATH=/usr/local/maven/bin:$PATH
+    EOF
+end
