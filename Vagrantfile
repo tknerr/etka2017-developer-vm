@@ -14,7 +14,7 @@ Vagrant::configure("2") do |config|
   # virtualbox customizations
   config.vm.provider :virtualbox do |vbox, override|
     vbox.customize ["modifyvm", :id,
-      "--name", "Linux Developer VM",
+      "--name", "Etka Developer VM",
       "--memory", 1048,
       "--cpus", 4
     ]
