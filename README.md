@@ -1,11 +1,11 @@
 
-# Linux Developer VM Example / Template
+# Etka Developer VM Example
 
-[![Circle CI](https://circleci.com/gh/Zuehlke/linux-developer-vm/tree/master.svg?style=shield)](https://circleci.com/gh/Zuehlke/linux-developer-vm/tree/master)
+[![Circle CI](https://circleci.com/gh/tknerr/etka2017-developer-vm/tree/master.svg?style=shield)](https://circleci.com/gh/tknerr/etka2017-developer-vm/tree/master)
 
-A minimal example / template project for a Chef-managed Linux Developer VM.
+A minimal example / template project for a Chef-managed Etka Developer VM.
 
-![Linux Developer VM Screenshot](https://raw.github.com/Zuehlke/linux-developer-vm/master/linux_devbox.png)
+![Etka Developer VM Screenshot](https://raw.github.com/tknerr/etka2017-developer-vm/master/linux_devbox.png)
 
 It's meant to be copy/pasted and filled with life. The `cookbooks/vm` directory
 contains the recipes for setting up the VM and the tests that come along with it.
@@ -40,7 +40,7 @@ Other tweaks and settings worth mentioning:
 
 The latest version of this developer VM can be downloaded as a VM image from here:
 
- * https://github.com/Zuehlke/linux-developer-vm/releases
+ * https://github.com/tknerr/etka2017-developer-vm/releases
 
 After downloading the .ova file you can import it into VirtualBox via `File -> Import Appliance...`.
 Once imported, you can simply start the VM and log in:
@@ -146,9 +146,9 @@ $ vagrant ssh -c "sudo umount /vagrant -f"
 Finally, shutdown the VM, remove the sharedfolder, and export the VM as an .ova file:
 ```
 $ vagrant halt
-$ VBoxManage sharedfolder remove "Linux Developer VM" --name "vagrant"
-$ VBoxManage modifyvm "Linux Developer VM" --name "Linux Developer VM v0.1.0"
-$ VBoxManage export "Linux Developer VM v0.1.0" --output "linux-developer-vm-v0.1.0.ova" --options manifest,nomacs
+$ VBoxManage sharedfolder remove "Etka Developer VM" --name "vagrant"
+$ VBoxManage modifyvm "Etka Developer VM" --name "Etka Developer VM v0.1.0"
+$ VBoxManage export "Etka Developer VM v0.1.0" --output "etka-developer-vm-v0.1.0.ova" --options manifest,nomacs
 ```
 
 Don't forget to throw away the VM when you are done:

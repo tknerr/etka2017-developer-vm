@@ -14,7 +14,7 @@ Vagrant::configure("2") do |config|
   # virtualbox customizations
   config.vm.provider :virtualbox do |vbox, override|
     vbox.customize ["modifyvm", :id,
-      "--name", "Linux Developer VM",
+      "--name", "Etka Developer VM",
       "--memory", 1048,
       "--cpus", 4
     ]
@@ -22,7 +22,7 @@ Vagrant::configure("2") do |config|
   end
 
   # set the hostname
-  config.vm.hostname = "linux-developer-vm.local"
+  config.vm.hostname = "etka-developer-vm.local"
   # don't create a new keypair
   config.ssh.insert_key = false
 
